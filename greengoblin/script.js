@@ -22,40 +22,40 @@ let points = 0;
 
 
 function preload(){
-  webSound = new Audio("./assets/5f13225a-a94b-420d-af84-739495e445fe-sfx-sounds-damage3.wav");
-  screamSound = new Audio("./assets/5f13225a-a94b-420d-af84-739495e445fe-sfx-deathscream-human14.wav");
-  pumpkinSound = new Audio("./assets/5f13225a-a94b-420d-af84-739495e445fe-sfx-wpn-grenadewhistle1.wav");
-  damageSound = new Audio("./assets/5f13225a-a94b-420d-af84-739495e445fe-sfx-damage-hit10.wav");
-  backgroundMusic = new Audio("./assets/5f13225a-a94b-420d-af84-739495e445fe-Spider-Man%20Theme%20%5B8%20Bit%20Tribute%20to%20Spider-Man%5D%20-%208%20Bit%20Universe.mp3");
-  jumpSound = new Audio("./assets/5f13225a-a94b-420d-af84-739495e445fe-sfx-Jump-08.wav");
-  explosionSound = new Audio("./assets/5f13225a-a94b-420d-af84-739495e445fe-sfx-Explosion-01.wav");
-  levelSound = new Audio("./assets/5f13225a-a94b-420d-af84-739495e445fe-sfx-sounds-powerup5.wav");
+  webSound = new Audio("./assets/sfx-sounds-damage3.wav");
+  screamSound = new Audio("./assets/sfx-deathscream-human14.wav");
+  pumpkinSound = new Audio("./assets/sfx-wpn-grenadewhistle1.wav");
+  damageSound = new Audio("./assets/sfx-damage-hit10.wav");
+  backgroundMusic = new Audio("./assets/Spider-Man%20Theme%20%5B8%20Bit%20Tribute%20to%20Spider-Man%5D%20-%208%20Bit%20Universe.mp3");
+  jumpSound = new Audio("./assets/sfx-Jump-08.wav");
+  explosionSound = new Audio("./assets/sfx-Explosion-01.wav");
+  levelSound = new Audio("./assets/sfx-sounds-powerup5.wav");
   img = {
-    bg:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-xChy58V.png"),
-    land:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-land.png"),
-    goblin_Idle1:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-goblin%20idle.png"),
-    goblin_Idle2:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-goblin%20idle%202.png"),
-    goblin_throw:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-golblin%20throw.png"),
-    pumpkin:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-pumpkin.png"),
-    idle:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-iron%20spider%201.png"),
-    walk:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-iron%20spider%202.png"),
-    spiderCoin:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-spider.png"),
-    spiderWeb:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-web.png"),
+    bg:loadImage("./assets/xChy58V.png"),
+    land:loadImage("./assets/land.png"),
+    goblin_Idle1:loadImage("./assets/goblin%20idle.png"),
+    goblin_Idle2:loadImage("./assets/goblin%20idle%202.png"),
+    goblin_throw:loadImage("./assets/golblin%20throw.png"),
+    pumpkin:loadImage("./assets/pumpkin.png"),
+    idle:loadImage("./assets/iron%20spider%201.png"),
+    walk:loadImage("./assets/iron%20spider%202.png"),
+    spiderCoin:loadImage("./assets/spider.png"),
+    spiderWeb:loadImage("./assets/web.png"),
   }
   explosion = {
-    e1:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-explosion1.png"),
-    e2:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-explosion2.png"),
-    e3:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-explosion3.png"),
-    e4:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-explosion4.png"),
-    e5:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-explosion5.png"),
-    e6:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-explosion6.png"),
-    e7:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-explosion7.png"),
-    e8:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-explosion8.png"),
-    e9:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-explosion9.png"),
+    e1:loadImage("./assets/explosion1.png"),
+    e2:loadImage("./assets/explosion2.png"),
+    e3:loadImage("./assets/explosion3.png"),
+    e4:loadImage("./assets/explosion4.png"),
+    e5:loadImage("./assets/explosion5.png"),
+    e6:loadImage("./assets/explosion6.png"),
+    e7:loadImage("./assets/explosion7.png"),
+    e8:loadImage("./assets/explosion8.png"),
+    e9:loadImage("./assets/explosion9.png"),
   }
   screen = {
-    title:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-download.jpg"),
-    lose:loadImage("./assets/5f13225a-a94b-420d-af84-739495e445fe-Spider-man-vs-Green-Goblin.jpg"),
+    title:loadImage("./assets/download.jpg"),
+    lose:loadImage("./assets/Spider-man-vs-Green-Goblin.jpg"),
   }
 }
 // create variables up here
